@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/JINBI.js">
+</head>
+<style>
+    .DD{
+        background-image: url(MU/e2dc7c5d23ad345febc2187811475356_t01417a9c0a4b1d8377.jpg);
+        background-color:green;
+        width: 100%;
+        height: 100px;
+    }
+    .TA0{
+        color: red;
+    }
+    div{
+        background-color: rgb(12, 12, 53);
+        width: 100%;
+        height: 100%;
+        
+    }
+    .Tbutton1{
+        background-image: url(MU/26c95e94a6f2243900e84389ba859c18_t01ff822617037167c7.jpg);
+        width: 100px;
+        height: 50px;
+        background-size: 100%;
+    }
+    .Tbutton1{
+        background-color: brown;
+        width: 100px;
+        height: 50px;
+    }
+    .img{
+        background-image: url(MU/26c95e94a6f2243900e84389ba859c18_t01ff822617037167c7.jpg);
+        width: 100px;
+        height: 50px;
+        background-size: 100%;
+    }
+    .BUTTON1{
+        width: 300px;
+        height: 300px;
+        background-image: url(MU/4db1d51f041b06a498d57e9730d2b3f3_780.jpg);
+    }
+    .TA1{
+        color: yellow;
+    }
+    h2{
+        color: yellow;
+    }
+</style>
+<body>
+    <script src="./Js/JINBI.js" type="jinbi"></script>
+    <script>
+        var JB = 0;
+
+        function numAdd() {
+            var JBA = document.getElementById('addtext');  //将金币的数值龙到指定id
+			JBA.innerHTML++;
+            JB.innerHTML++;
+            console.log(JB++);
+
+			//增加
+        }
+        function bought(){
+            if(JB >= 500){
+                alert("购买成功");
+                location.href="other.html";
+                
+            }
+
+        }
+    </script>
+    <div>
+        <div class="DD"><h1 calss="TA0">你目前处于商城区域</h1></div>
+        <br><divclass="div1">
+            <div class="img"></div><div><h1 style="font-size: 20px;"><h2>我的金币数值</h2></div>
+            <textarea readonly id="addtext" id="JBX">0</textarea> <!--这是显示金币-->
+            <div><input type="submit" name="btn" value="点我增加金币" onclick="numAdd()"/>
+            <br><button><a href="界面开始.html">返回</a></button align="right">
+            <br><br><a class="TA1">价格:500金币</a><br>
+            <button onclick="bought()" class="BUTTON1" value="购买宝箱"></button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
